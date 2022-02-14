@@ -1,13 +1,13 @@
 var reportsWidget = {
     options: {
-        containerSelector: '.module-frequently-asked-questions',
+        containerSelector: '.module-faq',
         template: (
             '{{#.}}' +
                 '{{#items}}' +
                 '<div class="module-faq_item">' +
                     '<div class="module-faq_category">' +
                         '<img class="module-faq_category-icon" src="{{iconPath}}"/>' +
-                        '<span class="module-faq_category-category"></span>'+
+                        '<span class="module-faq_category-category">{{type}}</span>'+
                     '</div>'+
                     '<div class="module-faq_text">' +
                         '<div class="module-faq_question">'+
@@ -30,12 +30,21 @@ var reportsWidget = {
     },
 
     beforeRenderItems(content){
-        console.log("CONTENT", content)
-
         var modifiedContent = content;
-
-        console.log("MODIFIED CONTENT", modifiedContent)
-
+        console.log(modifiedContent)
+        modifiedContent.items.forEach(function(itm, ix){
+            switch(itm.type){
+                case 'stock':
+                    itm.iconPath = 'images/icon-stock.png';
+                    break;
+                case 'company':
+                    itm.iconPath = 'images/icon-company.png';
+                    break;
+                case 'financial':
+                    itm.iconPath = 'images/icon-financials.png';
+                    break;
+            }
+        })
         return modifiedContent;
     },
 
@@ -49,11 +58,11 @@ var reportsWidget = {
     complete: function() {
         q4App.toggle(
             $('.module-faq'), // Containing Element
-            '.module-faq_itemm', // Individual Item Selector
-            '', // Item Toggler Selector
-            '', // Item to Toggle Selector
+            '.module-faq_item', // Item Selector
+            '.module-faq_question', // Toggle Selector
+            '.module-faq_answer', // Panel Selector
             false, // Accordion functionality?
-            false, // Show all / Hide all button?
+            true, // Show all / Hide all button?
             true); // Open first item?
     }
 };

@@ -73,4 +73,38 @@
 }
 
 /* Begin styling the report items here! */
-.reports {}
+.reports {
+  display: -ms-flexbox;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media all and (-ms-high-contrast: none) {
+  .reports_item {
+      margin: 15px;
+  }
+}
+
+@media (max-width: 930px) {
+  .reports {
+      justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  .reports {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reports {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+}

@@ -26,7 +26,9 @@ var prWidget = {
         content.filteredItems = [];
 
         content.items.forEach(function (el, ind, arr) {
-            content.filteredItems.push(el)
+            if(el.tags.indexOf('earnings') < 0){
+                content.filteredItems.push(el)
+            };
         });
 
         return content;
@@ -41,7 +43,30 @@ var prWidget = {
 
     complete: function() {
         // Add Slick Slider here (https://kenwheeler.github.io/slick/)
+        $('.module-press-release').slick({
+            dots: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots: true
+                }
+              }
+            ]
+          });
     }
 };
 
-pressReleaseWidget.init();
+prWidget.init();
