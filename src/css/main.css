@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e1e1e1;
+  font-family: "Roboto", sans-serif;
+  color: #222222;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+header {
+  padding: 20px;
+}
+
+article {
+  text-align: center;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.layout_link {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+  font-size: 26px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.layout_link:hover {
+  opacity: 0.8;
+}
+
+.align--center {
+  text-align: center;
+}
+
+.background--brand {
+  background-color: #0F5CA3;
+  color: #ffffff;
+}
+
+.background--brand-alt {
+  background-color: #222222;
+  color: #ffffff;
+}

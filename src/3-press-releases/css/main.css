@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+header,
+footer {
+  background-color: #2A3035;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+header {
+  padding: 20px;
+  background-color: #22272b;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+button,
+a.button {
+  background: #222222;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+button:hover,
+a.button:hover {
+  background: #000000;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.layout_container {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* ACCESSIBILITY */
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+/* SLICK OVERRIDES */
+.module-press-release .slick-next:before,
+.module-press-release .slick-prev:before {
+  font-size: 26px;
+}
+
+.module-press-release .slick-prev {
+  left: -5px;
+}
+
+.module-press-release .slick-next {
+  right: 0;
+}
+
+.module-press-release .slick-dots li button:before {
+  font-size: 18px;
+}
+
+.module-press-release .slick-next:before,
+.module-press-release .slick-prev:before {
+  color: #00FCFF;
+}
+
+.module-press-release .slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+
+.module-press-release .slick-dots {
+  position: relative;
+}
+
+/* MODULE PRESS RELEASES: GENERAL */
+.module-press-release {
+  padding: 20px;
+}
+
+.module-press-release_item {
+  display: block;
+  padding: 25px 20px;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.module-press-release_headline {
+  text-transform: uppercase;
+}
+
+.module-press-release_short-body {
+  margin-bottom: 20px;
+  border-left: 4px solid #00FCFF;
+  padding-left: 10px;
+  color: #000000;
+}
+
+.module-press-release_date {
+  font-style: italic;
+}
+
+.module-press-release_item .button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px auto;
+}

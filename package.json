@@ -1,0 +1,12 @@
+{
+  "name": "q4-fed-test",
+  "version": "1.0.0",
+  "description": "A professional front-end template for building fast, robust, and adaptable web apps or sites.",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  },
+  "scripts": {
+    "start": "http-server ./src"
+  }
+}
