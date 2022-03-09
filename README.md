@@ -14,7 +14,7 @@ This assessment consists of 3 sections that you will need to complete as per ins
 
 ## Getting Started & Submitting
 
-Please `clone` this repository to your own github account and then immediately make an `initial commit`. Then create a branch called `"fed-test-v2--submission"` to work off of. Upon completion, commit your changes to this branch and leave unmerged from the master branch.
+Please `fork` this repository so that it lives in your own github account and then create a branch called `"fed-test-v2--submission"` to work off of. Upon completion, commit your changes to this branch and leave unmerged from the master branch.
 
 There are 2 ways that you can view this project once you've cloned: 
 - If you have Node.js installed on your machine, you can run the project through the Node package `http-server` by opening up the project in a CLI and running the following commands:
