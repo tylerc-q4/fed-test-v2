@@ -14,9 +14,9 @@ This assessment consists of 3 sections that you will need to complete as per ins
 
 ## Getting Started & Submitting
 
-Please `fork` this repository so that it lives in your own github account and then create a branch called `"fed-test-v2--submission"` to work off of. Upon completion, commit your changes to this branch and leave unmerged from the master branch.
+Please `clone` this repository to your own github account and then immediately make an `initial commit`. Then create a branch called `"fed-test-v2--submission"` to work off of. Upon completion, commit your changes to this branch and leave unmerged from the master branch.
 
-There are 2 ways that you can view this project: 
+There are 2 ways that you can view this project once you've cloned: 
 - If you have Node.js installed on your machine, you can run the project through the Node package `http-server` by opening up the project in a CLI and running the following commands:
 
 ```
@@ -46,7 +46,7 @@ in your favourite web browser.
 
 ### Instructions
 - Fix any bugs or typos
-- Make all items `30px` apart and flow within a `3 column` grid that switches to a `2 column` grid when at a viewport width of `768px`, and then a `1 column` grid at a viewport width of `480px` and below. Consider how the items will need to scale as the viewport width changes and how the page itself will scale as more reports are added over time.
+- Make all items `30px` apart and flow within a `3 column` grid that switches to a `2 column` grid when at a viewport width of `768px`, and then a `1 column` grid at a viewport width of `480px` and below. Consider how the page will scale as more reports are added over time.
 
 ----
 
