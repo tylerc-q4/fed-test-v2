@@ -1,0 +1,121 @@
+/*
+    What is the CSS box model?
+
+    Explain the following properties
+*/
+
+.container-content {
+    box-sizing: content-box;
+}
+-content-box: The width & height of the element only includes the content. In other words, the border, padding and margin aren't part of the width or height. 
+This is the default value.
+
+.container-border {
+    box-sizing: border-box;
+}
+
+-border-box: The padding and border are included in the width and height.
+
+
+-In CSS, the box model is a box that binds all the HTML elements and it 
+includes features like margins, border, padding, and the actual content.
+
+-By using a box model we will get the authority to add the borders all 
+around the elements and we can also define the space between the elements.
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+
+
+/*
+    Difference between var, let, const?
+*/
+let allows you to declare variables that are limited to the scope of a block statement, or expression on which it is used, 
+unlike the var keyword, which declares a variable globally, or locally to an entire function regardless of block scope.
+
+- var -> es5, function/global scoped
+- let -> es6, block scoped
+- const -> es6, not expected to change
+
+-Border-radius
+
+
+/*
+    How do we make a rounded corner by using CSS?
+*/
+
+-Border-radius
+
+
+/*
+    Difference between padding and margins?
+*/
+
+-The margin is the property by which we can create space around elements. We can even create space to the exterior defined borders.
+
+/*
+    What are all of the position states used in CSS? 
+*/
+
+-Static(default)
+-Relative
+-Fixed
+-Absolute
+
+/*
+    What are the differences between relative and absolute in CSS?
+*/
+
+Relative - the element is positioned relative to its normal position. 
+Absolute - the element is positioned absolutely to its first positioned (such as relative) parent. 
+Fixed - the element is positioned related to the browser window. 
+Sticky - the element is positioned based on the user's scroll position.
+
+-The main difference between relative and absolute is that “relative” is used for the same tag in CSS and it means that if we write the left:10px 
+then the padding will shift to 10px in the left while absolute is totally relative to the non-static parent.
+
+-It means, if we write left:10px then the result will be 10px far from the left edge of the parent element.
+
+/*
+    Define ‘important’ declarations used in CSS.
+*/
+
+-Answer: Important declarations are defined as that declaration which is having more importance than the normal declaration.
+
+-While executing, these declarations override the declaration which is having less importance.
+
+
+/*
+    How is the concept of inheritance applied in CSS?
+*/
+
+-Inheritance is a concept in which the child class will inherit the properties of its parent class. 
+It is a concept which is been used in many languages and is the easy way of defining the same 
+property again.
+
+-It is used in CSS to define the hierarchy from the top level to the bottom level. Inherited properties can be overridden by the children’s class if the child uses the same name.
+
+
+/*
+    Differentiate between the ID and class of an element. When is one better over the other?
+*/
+
+
+-Both ID and class is been used in HTML and assigns the value from CSS.
+
+-The ID is a kind of element which uniquely assigns a name to a particular element whereas class has an element with a certain set of properties that can be used for the complete block.
+The id can be used as an element because it can uniquely identify it whereas class is also defined to block the elements and applies too many tags wherever it is used.
+ID provides the restriction to use its properties to one specific element whereas in class the inheritance is applied to a specific block or group of the element.
+
+
+/*
+    List a few important things to make your website accessible
+*/
+
+- alt tags, any aria attributes, heading hierarchy, proper color use, large enough font, keyboard navigation, logical tabbing order, focus decoration on elements 
+
+/*
+    Visibility:hidden vs display:none.
+*/
+
+- hidden, hides but it still takes up space in dom
+- none, removes

@@ -1,0 +1,53 @@
+/*
+    What is the CSS box model?
+
+    Explain the following properties
+*/
+
+.container-content {
+    box-sizing: content-box;
+}
+
+.container-border {
+    box-sizing: border-box;
+}
+
+/*
+    Difference between var, let, const?
+*/
+
+/*
+    How do we make a rounded corner by using CSS?
+*/
+
+/*
+    Difference between padding and margins?
+*/
+
+/*
+    What are all of the position states used in CSS?
+*/
+
+/*
+    What are the differences between relative and absolute in CSS?
+*/
+
+/*
+    Define ‘important’ declarations used in CSS. Are they a good idea to rely on?
+*/
+
+/*
+    How is the concept of inheritance applied in CSS?
+*/
+
+/*
+    Differentiate between the ID and class of an element. When is one better over the other?
+*/
+
+/*
+    List a few important things to make your website accessible
+*/
+
+/*
+    Describe the difference between "visibility:hidden" vs "display:none".
+*/

@@ -1,0 +1,25 @@
+<!--
+    How can you hide an element but still
+    have it be tabbable?
+-->
+
+<style>
+    .sr-only {
+        
+    }
+</style>
+
+<button class="sr-only">Skip to main content</button>
+
+
+
+
+YES
+- fixed/absolute positioning on screen + negative positioning off of screen
+- opacity: 0
+- width & height: 1px (not ideal but works)
+
+NO
+- display: none (not seen or read)
+- visibility: hidden (not seen or read)
+- height & width: 0 (most won't see or read)

@@ -1,0 +1,50 @@
+<!-- Walk us through the utility function below -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>
+    var utilityFuncs = {
+        showMore: function(cont, items, btnText, toShow){
+            var $items = $(cont).find(items);
+            $items.hide();
+            $items.slice(0, toShow).show();
+
+            if ($('#showMoreBtn').length) $('#showMoreBtn').remove();        
+            
+            if ($items.length > toShow){
+                $(cont).append('<a id ="showMoreBtn" href="javascript:;">'+btnText+'</a>');
+            }
+            
+            $(cont).on('click', '#showMoreBtn', function(ev){
+                ev.preventDefault();
+                var showing = $items.filter(':visible').length;
+                $items.slice(showing - 1, showing + toShow).fadeIn();
+                if ($items.filter(':visible').length >= $items.length) {
+                    $(ev.target).remove();
+                }
+            });
+        }
+    }
+
+    utilityFuncs.showMore('.container', '.item', 'Show More', 2)
+</script>
+
+<div class="container">
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+    <div class="item">
+        <span> This is an item</span>
+    </div>
+</div>
